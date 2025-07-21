@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Untuk Sayangku 💖</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Putar Lagu 💖</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #ffe3ec;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <canvas id="stars"></canvas>
+  <h1>🎵 Lagu Spesial Untukmu</h1>
 
   <audio id="bgm" autoplay loop>
     <source src="lagu.mp3" type="audio/mpeg" />
-    Browser tidak mendukung audio.
+    Browser kamu tidak mendukung audio.
   </audio>
 
-  <div class="container">
-    <h1>Hai, Sayangku 💕</h1>
-    <p class="main-message">Kamu adalah alasan aku tersenyum setiap hari 😊</p>
-    <button onclick="showLove()">Klik untuk baca pesanku ✨</button>
-    <p id="secret" class="hidden">
-      Aku bersyukur banget bisa bersamamu. Terima kasih karena kamu selalu membuat hariku lebih indah 💘
-    </p>
-
-    <form id="messageForm">
-      <input type="text" placeholder="Tulis pesan untukku..." />
-      <button type="submit">Kirim</button>
-    </form>
-
-    <h2>Kenangan Kita 📸</h2>
-    <div class="gallery">
-      <img src="foto1.jpg" alt="Foto 1" />
-      <img src="foto2.jpg" alt="Foto 2" />
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <br><br>
+  <button onclick="document.getElementById('bgm').play()">Putar Lagi</button>
+  <button onclick="document.getElementById('bgm').pause()">Pause Lagu</button>
 </body>
 </html>
